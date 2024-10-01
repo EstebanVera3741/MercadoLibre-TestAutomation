@@ -2,7 +2,7 @@ class MercadoLibreListProductsPage
 {
     webElements = {
       elementMainTitle: () => cy.get('.ui-search-breadcrumb__title'),
-      elementProductSearch: () => cy.get('h2.poly-component__title:first-child > a'),
+      elementProductSearch: (index) => cy.get('h2.poly-component__title > a').eq(index),
     };
   
     serviceListProductsPageIsVisible()
@@ -12,7 +12,7 @@ class MercadoLibreListProductsPage
 
     serviceSearchProduct()
     {
-        this.webElements.elementProductSearch().click();
+        this.webElements.elementProductSearch(0).click();
     }
 }
 

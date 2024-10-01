@@ -4,15 +4,15 @@ import { mercadoLibreHomePage } from '@pages/MercadoLibreHomePage'
 import { mercadoLibreListProductsPage } from "@pages/MercadoLibreListProductsPage";
 import { mercadoLibreProductPage } from "@pages/MercadoLibreProductPage";
   
-Given("The user accesses the Mercado Libre website", () => {
+Given('The user accesses the Mercado Libre website', () => {
     cy.visit("/");
 });
 
-When("The homepage loads correctly", () => {
+When('The homepage loads correctly', () => {
     mercadoLibreHomePage.serviceHomePageIsVisible();
 });
 
-When("The user enters {string} in the search field", (searchProduct) => {
+When('The user enters {string} in the search field', (searchProduct) => {
     mercadoLibreHomePage.serviceAddProduct(searchProduct);
 });
 

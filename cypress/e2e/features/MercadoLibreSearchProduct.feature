@@ -4,9 +4,9 @@ Feature: TC-001 - Search products on Mercado Libre
     Given The user accesses the Mercado Libre website
     And The homepage loads correctly
 
-  Scenario: SC-001 - Search for "Canon R100" product using the search bar
-    When The user enters "Canon R100" in the search field
+  Scenario: SC-001 - Search for "Canon Eos R100" product using the search bar
+    When The user enters "Canon Eos R100" in the search field
     And The user performs the search
     Then The system should display a list of related products
     When The user selects a product from the list
-    Then The selected product should be "Canon R100"
+    Then The selected product should be "Canon Eos R100"
