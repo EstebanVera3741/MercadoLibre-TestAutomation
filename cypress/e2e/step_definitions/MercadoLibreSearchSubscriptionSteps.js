@@ -7,7 +7,7 @@ import { mercadoLibreSubscriptionPage } from "@pages/MercadoLibreSubscriptionPag
 import { mercadoLibreTopicHelpPage } from "@pages/MercadoLibreTopicHelpPage";
 
 When('The user selects the "Help" button from the browser', () => {
-    mercadoLibreHomePage.serviceSelectBottomHelp();
+    mercadoLibreHomePage.serviceSelectBottomNav(5);
 });
 
 When('The user identifies the "Frequently Questions" section', () => {

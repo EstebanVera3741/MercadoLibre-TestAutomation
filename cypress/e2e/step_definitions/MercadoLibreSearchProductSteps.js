@@ -6,6 +6,7 @@ import { mercadoLibreProductPage } from "@pages/MercadoLibreProductPage";
   
 Given('The user accesses the Mercado Libre website', () => {
     cy.visit("/");
+    cy.viewport(1500, 990)
 });
 
 When('The homepage loads correctly', () => {

@@ -4,7 +4,7 @@ Feature: TC-002 - Validate FAQs about subscription on Mercado Libre
     Given The user accesses the Mercado Libre website
     And The homepage loads correctly
 
-  Scenario: SC-002 - Search for subscription information
+  Scenario: SC-001 - Search for subscription information
     When The user selects the "Help" button from the browser
     And The user identifies the "Frequently Questions" section
     And The user views the "Subscription" section

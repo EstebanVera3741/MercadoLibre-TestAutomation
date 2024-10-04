@@ -4,7 +4,7 @@ class MercadoLibreHomePage
         elementSectionCarousel: () => cy.get('[aria-label="Tus accesos dinámicos"]'),
         elementMainInput: () => cy.get('input.nav-search-input'),
         elementBottomSearch: () => cy.get('.nav-icon-search'),
-        elementBottomHelpNav: (index) => cy.get('.nav-menu-item-link').eq(index),
+        elementBottomNav: (index) => cy.get('.nav-menu-item-link').eq(index),
     };
   
     serviceHomePageIsVisible()
@@ -22,9 +22,9 @@ class MercadoLibreHomePage
         this.webElements.elementBottomSearch().click();
     }
 
-    serviceSelectBottomHelp()
+    serviceSelectBottomNav(numberNav)
     {
-        this.webElements.elementBottomHelpNav(5).click();
+        this.webElements.elementBottomNav(numberNav).click();
     }
 }
 
